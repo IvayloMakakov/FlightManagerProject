@@ -8,3 +8,13 @@ C:\Users\User\Documents\FlightManager-master\FlightManager\Data\obj\Debug\netcor
 C:\Users\User\Documents\FlightManager-master\FlightManager\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
 C:\Users\User\Documents\FlightManager-master\FlightManager\Data\obj\Debug\netcoreapp3.1\Data.dll
 C:\Users\User\Documents\FlightManager-master\FlightManager\Data\obj\Debug\netcoreapp3.1\Data.pdb
+C:\Users\User\Desktop\Нова папка (2)\FlightManagerProject\FlightManager\Data\bin\Debug\netcoreapp3.1\Data.deps.json
+C:\Users\User\Desktop\Нова папка (2)\FlightManagerProject\FlightManager\Data\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\User\Desktop\Нова папка (2)\FlightManagerProject\FlightManager\Data\bin\Debug\netcoreapp3.1\Data.pdb
+C:\Users\User\Desktop\Нова папка (2)\FlightManagerProject\FlightManager\Data\obj\Debug\netcoreapp3.1\Data.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Нова папка (2)\FlightManagerProject\FlightManager\Data\obj\Debug\netcoreapp3.1\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Нова папка (2)\FlightManagerProject\FlightManager\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Нова папка (2)\FlightManagerProject\FlightManager\Data\obj\Debug\netcoreapp3.1\Data.AssemblyInfo.cs
+C:\Users\User\Desktop\Нова папка (2)\FlightManagerProject\FlightManager\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Нова папка (2)\FlightManagerProject\FlightManager\Data\obj\Debug\netcoreapp3.1\Data.dll
+C:\Users\User\Desktop\Нова папка (2)\FlightManagerProject\FlightManager\Data\obj\Debug\netcoreapp3.1\Data.pdb

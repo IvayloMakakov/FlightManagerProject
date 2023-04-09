@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Net.Mail;
+
 using System.Text;
 using System.Threading.Tasks;
 using Data.Entity;
@@ -21,6 +21,8 @@ using RazorLight;
 using Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation;
 using Microsoft.AspNetCore.Authorization;
 using Web.Attributes;
+using MimeKit;
+using MailKit.Net.Smtp;
 
 namespace Web.Controllers
 {
@@ -230,6 +232,28 @@ namespace Web.Controllers
 
         private async void SendMailAsync(ConfirmationViewModel model)
         {
+            var email = new MimeMessage();
+           
+
+            email.From.Add(new MailboxAddress("Sender Name", "flightmanageremail@gmail.com"));
+            email.To.Add(new MailboxAddress("Receiver Name", model.Email));
+
+            email.Subject = "Testing out email sending";
+            email.Body = new TextPart(MimeKit.Text.TextFormat.Plain)
+            {
+                Text = $"You have reserved a flight\nDepartureTime: {model.DepartureTime}\nFrom: {model.FlightSource}\nTo:{model.FlightDestination}"
+            };
+
+            using (var smtp = new SmtpClient())
+            {
+                smtp.Connect("smtp.gmail.com", 587, false);
+
+                // Note: only needed if the SMTP server requires authentication
+                smtp.Authenticate("flightmanageremail@gmail.com", "ynoeaqwswrmrlpzh");
+
+                smtp.Send(email);
+                smtp.Disconnect(true);
+            }
             //string tostring = $"From: flightmanageremail@gmail.com\nYou have reserved a flight:\nPassangers: {model.Passangers.Count()}\nFlight Destination: {model.FlightDestination}\nDeparture Time: {model.DepartureTime}";
 
             //IEmailSender emailSender;
